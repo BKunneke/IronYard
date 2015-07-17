@@ -5,6 +5,9 @@ JSON - JavaScript Object Notation.  It is a minimal, readable format for structu
   between a server and web application.  It is an alternative to XML.
 LAMP - a technology stack that includes Linux, Apache, MySQL, and PHP/Python/Perl
 MEAN - a technology stack that includes MongoDB, ExpressJS, AngularJS, and Node.js
+Replication - automatically creating one or more copies of data across one or more servers to better guarantee guarding 
+  data loss.
 Schema - a logical representation of data held in a database.  Schema's define tables and columns.
+Sharding - physically separating large data sets across multiple machines to overcome the size limitation of a single machine.
 XML - Extensible Markup Language.  It is a markup language that defines a set of rules for encoding documents and 
   representing data in a structured manner
