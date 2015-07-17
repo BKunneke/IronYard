@@ -1,0 +1,52 @@
+Here's a simple example of storing data.  Imagine storing a list of contacts.  For each person, you'll want to store their name,
+email address, Twitter handle, and what their skills are.  We'll keep it simple and assume all are strings, and there aren't
+any foreign keys (don't worry what that means for now), and that skills is a list.  I'll show 3 represenations of it to contrast
+the differences between traditional SQL, XML, and JSON.
+
+SQL:
+I'll show two SQL statements, one to create a table the other to insert the data into the table:
+
+CREATE TABLE mytable(
+   firstName     VARCHAR(4) NOT NULL PRIMARY KEY
+  ,lastName      VARCHAR(7) NOT NULL
+  ,email         VARCHAR(20) NOT NULL
+  ,twitterHandle VARCHAR(9) NOT NULL
+  ,skills        VARCHAR(46) NOT NULL
+);
+
+INSERT INTO mytable
+  (firstName,lastName,email,twitterHandle,skills) 
+  VALUES 
+  ('Bill','Kunneke','Bill@TheKunnekes.Com','@BKunneke','Java, C#, MongoDB, SQL Server, MySQL, PostGRES');
+
+
+XML:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <element>
+      <email>Bill@TheKunnekes.Com</email>
+      <firstName>Bill</firstName>
+      <lastName>Kunneke</lastName>
+      <skills>
+         <element>Java</element>
+         <element>C#</element>
+         <element>MongoDB</element>
+         <element>SQL Server</element>
+         <element>MySQL</element>
+         <element>PostGRES</element>
+      </skills>
+      <twitterHandle>@BKunneke</twitterHandle>
+   </element>
+</root>
+
+JSON:
+
+ {
+    "firstName":"Bill",
+    "lastName":"Kunneke",
+    "email":"Bill@TheKunnekes.Com",
+    "twitterHandle":"@BKunneke",
+    "skills":["Java", "C#", "MongoDB", "SQL Server", "MySQL", "PostGRES"]
+  }
+  
