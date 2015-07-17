@@ -11,3 +11,4 @@ Schema - a logical representation of data held in a database.  Schema's define t
 Sharding - physically separating large data sets across multiple machines to overcome the size limitation of a single machine.
 XML - Extensible Markup Language.  It is a markup language that defines a set of rules for encoding documents and 
   representing data in a structured manner
+Yum - The Yellowdog Updater, Modified (yum) is an open-source command-line package-management utility for Linux operating systems 
