@@ -1,0 +1,10 @@
+
+Homebrew - a package manager for Mac OS.   Package handlers automate the process of installing, upgrading, configuring, and 
+  removing software packages for a computer's operating system in a consistent manner.
+JSON - JavaScript Object Notation.  It is a minimal, readable format for structuring data used primarily to transmit data 
+  between a server and web application.  It is an alternative to XML.
+LAMP - a technology stack that includes Linux, Apache, MySQL, and PHP/Python/Perl
+MEAN - a technology stack that includes MongoDB, ExpressJS, AngularJS, and Node.js
+Schema - a logical representation of data held in a database.  Schema's define tables and columns.
+XML - Extensible Markup Language.  It is a markup language that defines a set of rules for encoding documents and 
+  representing data in a structured manner
