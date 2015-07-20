@@ -1,7 +1,11 @@
 Useful resources related to my talk:
 
+Brew Doctor - http://brew.sh/
+  How to set up Brew for your Mac OS.  Package handler like Yum or Apt
+  Start here then once you install Brew Doctor, run Brew Install Mongo from a command line to install the latest MongoDB 
+
 MongoDB - https://MongoDB.Org/
-  All documentation, great examples
+  All MongoDB documentation, great examples
   
 Mongo University - https://university.mongodb.com/
   Sign up for free on line courses for various MongoDB classes.  Strongly recommend the MongoDB for DBA class since it 
@@ -13,5 +17,3 @@ Sample data set to use in MongoDB and how to import it:
 MEAN Stack - http://mean.io/#!/
   Info on the MEAN stack
 
-Brew Doctor - http://brew.sh/
-  How to set up Brew for your Mac OS.  Package handler like Yum or Apt
