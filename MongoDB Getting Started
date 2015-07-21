@@ -1,0 +1,16 @@
+To start Mongo, open a terminal shell and enter:
+  mongod
+
+Leave that shell running and open another terminal shell tab and enter:
+  mongo
+
+The first command starte the mongo daemon (hence the d at the end of the command for daemon).  The second command starts 
+the mongo shell where you can interact with MongoDB.  When you enter the shell like this, you'll get a prompt that looks like:
+  >
+  
+Here are two useful commands to try out first:
+  > db.help()
+
+This will give you help for database (db) commands.  You'll notice one command I'd like you to try next:
+  > db.getCollectionNames()
+
