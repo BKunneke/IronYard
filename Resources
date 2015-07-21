@@ -8,8 +8,9 @@ MongoDB - https://MongoDB.Org/
   All MongoDB documentation, great examples
   
 Mongo University - https://university.mongodb.com/
-  Sign up for free on line courses for various MongoDB classes.  Strongly recommend the MongoDB for DBA class since it 
-  exposes you to how and why MongoDB works.
+  Sign up for free on line courses for various MongoDB classes.  Strongly recommend starting with the MongoDB for DBA class 
+  since it exposes you to how and why MongoDB works.  These classes require 5-10 hours a week and if you miss a week, you will
+  have a very difficult time catching up.  
 
 Sample data set to use in MongoDB and how to import it:
   https://docs.mongodb.org/getting-started/shell/import-data/
@@ -17,3 +18,4 @@ Sample data set to use in MongoDB and how to import it:
 MEAN Stack - http://mean.io/#!/
   Info on the MEAN stack
 
+MongoDB definitions - http://docs.mongodb.org/manual/reference/glossary/
