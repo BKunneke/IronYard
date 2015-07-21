@@ -27,6 +27,13 @@ example is a document about me.  Now run:
   > db.people.help()
 
 The first command shows you how many documents are in the colleciton, just one for now.  The second shows you help for the
-collection, what you do with your people collection.  
+collection, what you do with your people collection.  Now try:
+  > db.people.find()
+
+You'll see the document emitted back, but it's a little hard to read so try this now:
+  > db.people.find().pretty()
+
+Pretty is a helper function that cleans up the output making it easier to read.  
+
   
   
