@@ -11,6 +11,22 @@ the mongo shell where you can interact with MongoDB.  When you enter the shell l
 Here are two useful commands to try out first:
   > db.help()
 
-This will give you help for database (db) commands.  You'll notice one command I'd like you to try next:
+This will give you help for database (db) commands. Try this next:
   > db.getCollectionNames()
 
+This shows you any collections you have in the current database.  Lets create a collection and add a document to it.  First:
+  > db.createCollection("people")
+  
+Creates a collection named people.  Now:
+  > db.people.insert({"firstName":"Bill", "lastName":"Kunneke", "email":"Bill@TheKunnekes.Com", "twitterHandle":"@BKunneke", 
+  "skills":["Java", "C#", "MongoDB", "SQL Server", "MySQL", "PostGRES"]})
+
+This inserts a new document (a record in SQL terms) into the new collection.  The insert requires a valid JSON document, my
+example is a document about me.  Now run:
+  > db.people.count()
+  > db.people.help()
+
+The first command shows you how many documents are in the colleciton, just one for now.  The second shows you help for the
+collection, what you do with your people collection.  
+  
+  
