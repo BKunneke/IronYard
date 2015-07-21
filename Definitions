@@ -1,4 +1,6 @@
-
+Collection - a group of documents in MongoDB, similar to a SQL table.
+Daemon - a computer program that runs as a background process (no user interface)
+Database - a group of related data sets.  In MongoDB, a database contains a set of collections.
 Homebrew - a package manager for Mac OS.   Package handlers automate the process of installing, upgrading, configuring, and 
   removing software packages for a computer's operating system in a consistent manner.
 JSON - JavaScript Object Notation.  It is a minimal, readable format for structuring data used primarily to transmit data 
