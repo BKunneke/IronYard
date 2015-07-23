@@ -30,10 +30,23 @@ The first command shows you how many documents are in the colleciton, just one f
 collection, what you do with your people collection.  Now try:
   > db.people.find()
 
-You'll see the document emitted back, but it's a little hard to read so try this now:
+Since we haven't specified what to find, we get everything back, in this case only one document though.  You'll see the 
+document emitted back, but it's a little hard to read so try this now:
   > db.people.find().pretty()
 
-Pretty is a helper function that cleans up the output making it easier to read.  
+Pretty is a helper function that cleans up the output making it easier to read.  The MongoDB shell performed a find, then 
+passed the results to the pretty function.
 
-  
-  
+  > db.people.find( { "skills" : "MongoDB" }, { "firstName" : 1, "lastName" : 1 } )
+
+Even though we didn't do it in the first example, both find and findOne can optionally be given some addional information 
+that tells Mongo what to return.  Notice that we've passed in a valid JSON document to the findOnecommand, this is the norm.  
+Parameters are always passed as a valid JSON document.  In this case, we passed two JSON documents in as parameters.  
+The first specifies which documents to get, similar to a WHERE clause in SQL.  What we requested was "find a 
+document in the people collection that contains MongoDB in the skills list".  The second JSON document we passed instructs
+Mongo to only show the firstName and lastName keys in the results.  
+
+  > db.people.insert({"firstName":"Kevin", "lastName":"Mitnick", "skills":["Hacking", "Phreaking"]})
+
+Note that this document doesn't contain all the same keys, this is part of the power behind MongoDB.  It's a valid JSON
+document so Mongo inserts it into the people collection.  
